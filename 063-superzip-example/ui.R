@@ -3,6 +3,7 @@ library(leaflet)
 # Choices for drop-downs
 vars <- c(
   "Is SuperZIP?" = "superzip",
+  "Foreclosures" = "Foreclosures",
   "Centile score" = "centile",
   "College education" = "college",
   "Median income" = "income",

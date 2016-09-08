@@ -105,7 +105,8 @@ function(input, output, session) {
       ))), tags$br(),
       sprintf("Median household income: %s", dollar(selectedZip$income * 1000)), tags$br(),
       sprintf("Percent of adults with BA: %s%%", as.integer(selectedZip$college)), tags$br(),
-      sprintf("Adult population: %s", selectedZip$adultpop)
+      sprintf("Adult population: %s", selectedZip$adultpop),
+      sprintf("Foreclosures: %s", selectedZip$Foreclosures)
     ))
     leafletProxy("map") %>% addPopups(lng, lat, content, layerId = zipcode)
   }

@@ -1,5 +1,7 @@
+
+
 library(dplyr)
-# setwd("/Users/Ohlrogge/Dropbox/Joint_Projects/LGD/0 Code/Shiny Stats/063-superzip-example/")
+setwd("/Users/Ohlrogge/Dropbox/Joint_Projects/LGD/0 Code/Shiny Stats/063-superzip-example/")
 allzips <- readRDS("data/superzip2.rds")
 allzips$latitude <- jitter(allzips$latitude)
 allzips$longitude <- jitter(allzips$longitude)
@@ -20,5 +22,6 @@ cleantable <- allzips %>%
     College = college,
     Income = income,
     Lat = latitude,
-    Long = longitude
+    Long = longitude,
+    Foreclosures = Foreclosures,
   )
