@@ -3,9 +3,9 @@ library(leaflet)
 # Choices for drop-downs
 vars <- c(
   # "Is SuperZIP?" = "superzip",
-  "Foreclosures" = "Foreclosures",
-  "Delinquencies" = "Delinquencies",
-  "OpenMortgages" = "OpenMortgages",
+  "Foreclosures per 1000 pop" = "Foreclosures",
+  # "Delinquencies" = "Delinquencies",
+  # "OpenMortgages" = "OpenMortgages",
   # "Centile score" = "centile",
   "College education" = "college",
   "Median income" = "income",
@@ -48,7 +48,7 @@ navbarPage("Superzip", id="nav",
       #   'Data compiled for ', tags$em('Coming Apart: The State of White America, 1960–2010'), ' by Charles Murray (Crown Forum, 2012).'
       # )
       tags$div(id="cite",
-        '', tags$em('Foreclosure, Delinquency Stats Given per 1000 population'), ''
+        '', tags$em('    '), ''
       )
 
     )
