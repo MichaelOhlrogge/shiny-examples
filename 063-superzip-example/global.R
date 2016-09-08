@@ -1,4 +1,4 @@
-options(error=traceback)
+# options(error=traceback)
 
 library(dplyr)
 # setwd("/Users/Ohlrogge/Dropbox/Joint_Projects/LGD/0 Code/Shiny Stats/Modified_Example/063-superzip-example/")
@@ -23,5 +23,5 @@ cleantable <- allzips %>%
     Income = income,
     Lat = latitude,
     Long = longitude,
-    Foreclosures = Foreclosures,
+    Foreclosures = Foreclosures
   )
