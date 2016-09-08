@@ -13,7 +13,7 @@ vars <- c(
 )
 
 
-navbarPage("Superzip", id="nav",
+navbarPage("Mortgage Risk Factors", id="nav",
 
   tabPanel("Interactive map",
     div(class="outer",
