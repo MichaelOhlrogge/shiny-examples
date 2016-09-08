@@ -9,7 +9,7 @@ set.seed(100)
 zipdata <- allzips[sample.int(nrow(allzips), 10000),]
 # By ordering by centile, we ensure that the (comparatively rare) SuperZIPs
 # will be drawn last and thus be easier to see
-zipdata <- zipdata[order(zipdata$centile),]
+zipdata <- zipdata[order(zipdata$Foreclosures),]
 
 function(input, output, session) {
 
@@ -78,7 +78,7 @@ function(input, output, session) {
     } else {
       colorData <- zipdata[[colorBy]]
       # pal <- (colorBin("Spectral", colorData, 7, pretty = FALSE))
-      MyCols = brewer.pal(7, "Spectral")
+      MyCols = rev(brewer.pal(7, "Spectral"))
       pal <- (colorBin(palette = MyCols, colorData, 7, pretty = FALSE))
     }
 
