@@ -23,5 +23,6 @@ cleantable <- allzips %>%
     Income = income,
     Lat = latitude,
     Long = longitude,
-    Foreclosures = Foreclosures
+    Foreclosures = Foreclosures,
+    Delinquencies = Delinquencies
   )

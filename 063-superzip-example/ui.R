@@ -4,6 +4,7 @@ library(leaflet)
 vars <- c(
   "Is SuperZIP?" = "superzip",
   "Foreclosures" = "Foreclosures",
+  "Delinquencies" = "Delinquencies",
   "Centile score" = "centile",
   "College education" = "college",
   "Median income" = "income",
