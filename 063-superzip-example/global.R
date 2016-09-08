@@ -25,5 +25,5 @@ cleantable <- allzips %>%
     Long = longitude,
     Foreclosures = Foreclosures,
     Delinquencies = Delinquencies,
-    OpenMortgages = OpenMortgages,
+    OpenMortgages = OpenMortgages
   )
