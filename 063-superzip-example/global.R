@@ -1,11 +1,12 @@
 library(dplyr)
-
-allzips <- readRDS("data/superzip.rds")
+# setwd("/Users/Ohlrogge/Dropbox/Joint_Projects/LGD/0 Code/Shiny Stats/063-superzip-example/")
+allzips <- readRDS("data/superzip2.rds")
 allzips$latitude <- jitter(allzips$latitude)
 allzips$longitude <- jitter(allzips$longitude)
 allzips$college <- allzips$college * 100
 allzips$zipcode <- formatC(allzips$zipcode, width=5, format="d", flag="0")
 row.names(allzips) <- allzips$zipcode
+
 
 cleantable <- allzips %>%
   select(
