@@ -77,7 +77,7 @@ function(input, output, session) {
       pal <- colorFactor("Spectral", colorData)
     } else {
       colorData <- zipdata[[colorBy]]
-      pal <- colorBin("Spectral", colorData, 7, pretty = FALSE)
+      pal <- rev(colorBin("Spectral", colorData, 7, pretty = FALSE))  ## MO: reverse color ordering
     }
 
     if (sizeBy == "superzip") {
