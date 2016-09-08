@@ -2,11 +2,11 @@ library(leaflet)
 
 # Choices for drop-downs
 vars <- c(
-  "Is SuperZIP?" = "superzip",
+  # "Is SuperZIP?" = "superzip",
   "Foreclosures" = "Foreclosures",
   "Delinquencies" = "Delinquencies",
   "OpenMortgages" = "OpenMortgages",
-  "Centile score" = "centile",
+  # "Centile score" = "centile",
   "College education" = "college",
   "Median income" = "income",
   "Population" = "adultpop"
