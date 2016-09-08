@@ -41,9 +41,9 @@ navbarPage("Superzip", id="nav",
         plotOutput("scatterCollegeIncome", height = 250)
       ),
 
-      tags$div(id="cite",
-        'Data compiled for ', tags$em('Coming Apart: The State of White America, 1960–2010'), ' by Charles Murray (Crown Forum, 2012).'
-      )
+      # tags$div(id="cite",
+      #   'Data compiled for ', tags$em('Coming Apart: The State of White America, 1960–2010'), ' by Charles Murray (Crown Forum, 2012).'
+      # )
     )
   ),
 
