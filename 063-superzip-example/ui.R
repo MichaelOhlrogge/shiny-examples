@@ -5,6 +5,7 @@ vars <- c(
   "Is SuperZIP?" = "superzip",
   "Foreclosures" = "Foreclosures",
   "Delinquencies" = "Delinquencies",
+  "OpenMortgages" = "OpenMortgages",
   "Centile score" = "centile",
   "College education" = "college",
   "Median income" = "income",
